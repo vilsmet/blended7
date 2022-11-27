@@ -215,30 +215,40 @@ ul {
   margin-right: 12px;
 }
 .video {
-    background-color: #06071b;
-    padding-top: 60px;
-    padding-bottom: 98px;
+  background-color: #06071b;
+  padding-top: 60px;
+  padding-bottom: 98px;
 }
 .video-container {
-    position: relative;
+  position: relative;
   width: 1280px;
   margin: 0 auto;
   padding: 0 16px;
 }
 .video .title {
-    color: var(--text-color);
-    text-transform: uppercase;
+  color: var(--text-color);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.208;
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }
 .video .text {
-    color: var(--text-color);
-    width: 479px;
+  color: var(--text-color);
+  width: 479px;
+  fong-size: 16px;
+  line-height: 1.1875;
+  margin-bottom: 40px;
 }
 .video-image {
-    position: absolute;
-    top: 60px;
-    right: 121px;
+  position: absolute;
+  top: 0px;
+  right: 121px;
 }
 .videobutton {
-    border-radius: 50%;
-    background: linear-gradient(to right, var(--left-color-gradient), var(--right-color-gradient));
+    padding: 0;
+    margin: 0;
+    border: none;
+  border-radius: 50%;
+  /* background: linear-gradient(to right, var(--left-color-gradient), var(--right-color-gradient)); */
 }
