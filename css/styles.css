@@ -129,6 +129,11 @@ ul {
   line-height: 1.1875;
   margin-top: 28px;
 }
+.hero-list .item::before {
+  display: inline-block;
+  content: url(../images/more.png);
+  margin-right: 9.4px;
+}
 .hero-list .item:not(:last-child) {
   margin-bottom: 12px;
 }
@@ -204,6 +209,11 @@ ul {
 .features .short {
   display: flex;
   align-items: center;
+}
+.features .short:before {
+  display: block;
+  content:url(../images/nft.png);
+  margin-right: 12px;
 }
 .features .info {
   margin-left: 40px;
@@ -309,4 +319,31 @@ ul {
 }
 .container.customer {
   text-align: center;
+}
+
+.sell {
+  width: 1280px;
+  margin: 0 auto;
+  padding: 0 16px;
+  display: flex;
+
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+.sell .item {
+  width: 100px;
+  margin-right: 100px;
+}
+.sell .subitem {
+  width: 100px;
+  display: none;
+}
+.sell .item:hover .subitem{
+  display: block;
+}
+.sell .subitem2 {
+  display: none;
+}
+.subitem .item2:hover .subitem2 {
+  display: block;
 }
