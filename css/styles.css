@@ -253,7 +253,7 @@ ul {
 .video .text {
   color: var(--text-color);
   width: 479px;
-  fong-size: 16px;
+  font-size: 16px;
   line-height: 1.1875;
   margin-bottom: 40px;
 }
@@ -347,3 +347,24 @@ ul {
 .subitem .item2:hover .subitem2 {
   display: block;
 }
+
+/* ul {
+  padding: 0;
+  list-style: none;
+}
+
+
+.menu>.menu-item {
+   display: inline-block; 
+    opacity: 1;
+    vertical-align: top;
+}
+
+.sub-menu .menu-item  {
+  opacity: 0;
+  margin-left: 100px;
+}
+
+.menu-item:hover .menu-item{
+  opacity: 1;
+}  */
