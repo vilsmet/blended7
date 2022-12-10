@@ -212,7 +212,7 @@ ul {
 }
 .features .short:before {
   display: block;
-  content:url(../images/nft.png);
+  content: url(../images/nft.png);
   margin-right: 12px;
 }
 .features .info {
@@ -282,9 +282,11 @@ ul {
   display: flex;
   gap: 32px;
 }
-.portraits .item {
+
+.portraits .item,
+.portraits .itemb {
   width: 288px;
-  height: 364px;
+  /* height: 364px; */
   border-radius: 15px;
   background: linear-gradient(
       312.87deg,
@@ -294,10 +296,6 @@ ul {
     #06071b;
 }
 .portraits .itemb {
-  width: 288px;
-  height: 364px;
-  border-radius: 15px;
-  border-radius: 15px;
   background: linear-gradient(
       105.09deg,
       rgba(0, 197, 235, 0.5) -13.66%,
@@ -338,7 +336,7 @@ ul {
   width: 100px;
   display: none;
 }
-.sell .item:hover .subitem{
+.sell .item:hover .subitem {
   display: block;
 }
 .sell .subitem2 {
@@ -347,24 +345,120 @@ ul {
 .subitem .item2:hover .subitem2 {
   display: block;
 }
-
-/* ul {
-  padding: 0;
-  list-style: none;
+.team-info {
+  padding-top: 20px;
+  padding-bottom: 12px;
+  text-align: center;
 }
-
-
-.menu>.menu-item {
-   display: inline-block; 
-    opacity: 1;
-    vertical-align: top;
+.team-name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.222;
+  color: var(--text-color);
+  margin-bottom: 12px;
 }
-
-.sub-menu .menu-item  {
-  opacity: 0;
-  margin-left: 100px;
+.team-role {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.714;
+  color: var(--text-color);
 }
+.customer-container {
+  width: 886px;
+  margin: 0 auto;
+}
+.customer-name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.222;
+  margin-top: 20px;
+  margin-bottom: 12px;
+}
+.customer-company {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.714;
+  margin-bottom: 40px;
+}
+.customer-review {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.667;
+  text-align: center;
+}
+.footer {
+  background-color: var(--primary-background);
+  color: var(--text-color);
+}
+.footer-icons {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+.footer-items {
+  width: 40px;
+  height: 40px;
+}
+.footer-refs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: var(--text-color);
+  border-radius: 50%;
+  background-image: linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
+}
+.footer .social-icon {
+  fill: currentColor;
+}
+.footer-contact {
+  width: 500px;
+}
+.footer .title {
+  margin-bottom: 80px;
+}
+.footer-contact {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.208;
+  margin-bottom: 20px;
+}
+.footer-description {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.1875;
+  margin-bottom: 20px;
+}
+.footer-phone {
+  font-weight: 500;
+  font-size: 16;
+  line-height: 1.1875;
+  margin-bottom: 12px;
+}
+.footer-mail {
+    font-weight: 500;
+  font-size: 14;
+  line-height: 1.214;
+}
+.footer-flex {
+  display: flex;
+}
+.footer-input {
+  display: inline-block;
+  width: 288px;
+  height: 40px;
+}
+.footer-input.first {
+  margin-right: 32px;
+}
+.footer-textarea {
+  display: block;
+  margin-top: 20px;
+}
+.textarea {
+  width: 608px;
+  height: 162px;
+  resize: none;
 
-.menu-item:hover .menu-item{
-  opacity: 1;
-}  */
+}

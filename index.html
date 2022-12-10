@@ -142,30 +142,30 @@
           <!-- li*4>img+div>h3+p -->
           <li class="item">
             <img class="port" src="./images/john1.jpg" alt="portrait of john1" width="264" />
-            <div>
-              <h3>John Doe</h3>
-              <p>Managing Direcor</p>
+            <div class="team-info">
+              <h3 class="team-name">John Doe</h3>
+              <p class="team-role">Managing Direcor</p>
             </div>
           </li>
           <li class="itemb">
             <img class="port" src="./images/jane1.jpg" alt="portrait of jane1" width="264" />
-            <div>
-              <h3>Jane Doe</h3>
-              <p>Lead Designer</p>
+            <div class="team-info">
+              <h3 class="team-name">Jane Doe</h3>
+              <p class="team-role">Lead Designer</p>
             </div>
           </li>
           <li class="itemb">
             <img class="port" src="./images/jane2.jpg" alt="portrait of jane2" width="264" />
-            <div>
-              <h3>Jane Doe</h3>
-              <p>Lead Developer</p>
+            <div class="team-info">
+              <h3 class="team-name">Jane Doe</h3>
+              <p class="team-role">Lead Developer</p>
             </div>
           </li>
           <li class="item">
             <img class="port" src="./images/john2.jpg" alt="portrait of john2" width="264" />
-            <div>
-              <h3>John Doe</h3>
-              <p>Sr. UI Designer</p>
+            <div class="team-info">
+              <h3 class="team-name">John Doe</h3>
+              <p class="team-role">Sr. UI Designer</p>
             </div>
           </li>
         </ul>
@@ -174,37 +174,74 @@
     <section class="section">
       <div class="container customer">
         <h2 class="title">WHAT OUR COSTUMER’S SAY</h2>
-        <img src="./images/johnround.jpg" alt="" />
-        <h3>John Doe</h3>
-        <p>Company Inc.</p>
-        <p>
-          Vestibulum placerat nisl quis justo venenatis, et lacinia nunc venenatis. semper libero
-          nec sapien condimentum dignissim. Nunc ante ligula, tempor in tellus in, gravida
-          vestibulum justo. Nulla facilisi. Nullam tristique eros quis nibh tempus, vel viverra
-          dolor pretium. Nam et vehicula leo. Vivamus hendrerit sit amet ante a tempus. Aenean
-          gravida massa et ante pulvinar, id
-        </p>
+        <div class="customer-container">
+          <img src="./images/johnround.jpg" alt="" />
+          <h3 class="customer-name">John Doe</h3>
+          <p class="customer-company">Company Inc.</p>
+          <p customer-review>
+            Vestibulum placerat nisl quis justo venenatis, et lacinia nunc venenatis. semper libero
+            nec sapien condimentum dignissim. Nunc ante ligula, tempor in tellus in, gravida
+            vestibulum justo. Nulla facilisi. Nullam tristique eros quis nibh tempus, vel viverra
+            dolor pretium. Nam et vehicula leo. Vivamus hendrerit sit amet ante a tempus. Aenean
+            gravida massa et ante pulvinar, id
+          </p>
+        </div>
       </div>
     </section>
-    <footer class="section">
+    <footer class="section footer">
       <div class="container">
-        <div>
-          <h2 class="title">CONTACT US</h2>
-          <h3>Get in touch with us</h3>
-          <p>
-            Nunc urna est, tristique et varius at, pharetra nec enim. Quisque rhoncus lacus
-            fringilla nulla sollicitudin tristique.
-          </p>
-          <address>
-            <ul>
-              <li>+xx-xxxx-xxxx-xx</li>
-              <li>goIteens@gmail.com</li>
+        <h2 class="title">CONTACT US</h2>
+        <div class="footer-flex">
+          <div class="footer-contact">
+            <h3 class="footer-contact">Get in touch with us</h3>
+            <p class="footer-description">
+              Nunc urna est, tristique et varius at, pharetra nec enim. Quisque rhoncus lacus
+              fringilla nulla sollicitudin tristique.
+            </p>
+            <ul class="footer-icons">
+              <li class="footer-items">
+                <a class="footer-refs" href="">
+                  <svg class="social-icon" width="20" height="20">
+                    <use href="./images/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-items">
+                <a class="footer-refs" href="">
+                  <svg class="social-icon" width="20" height="20">
+                    <use href="./images/icons.svg#twitter"></use></svg
+                ></a>
+              </li>
+              <li class="footer-items">
+                <a class="footer-refs" href="">
+                  <svg class="social-icon" width="20" height="20">
+                    <use href="./images/icons.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
             </ul>
-          </address>
-        </div>
-        <div>
-          <form action=""></form>
-          <button type="submit"></button>
+            <address>
+              <ul>
+                <li class="footer-phone">+xx-xxxx-xxxx-xx</li>
+                <li class="footer-mail">goIteens@gmail.com</li>
+              </ul>
+            </address>
+          </div>
+
+          <div>
+            <form action="">
+              <label>
+                <input class="footer-input first" placeholder="Name" type="text" />
+              </label>
+              <label for="">
+                <input class="footer-input" placeholder="E-mail" type="mail" />
+              </label>
+              <label class="footer-textarea" for="">
+                <textarea class="textarea" name=""></textarea>
+              </label>
+            </form>
+            <button type="submit">Submit</button>
+          </div>
         </div>
         <p>© 2019 GoIteens Template. All Rights Reserved</p>
       </div>
@@ -229,23 +266,5 @@
       <li class="item">item3</li>
       <li class="item">item4</li>
     </ul>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus atque rem distinctio, ex
-      dolores at ad, architecto officia voluptatum nesciunt praesentium magnam asperiores molestiae
-      amet exercitationem voluptate. Minus similique esse vel corrupti culpa in sunt dolor atque
-      distinctio quisquam debitis odio ad impedit tenetur unde tempore sint, accusamus neque magni
-      inventore. Quidem, suscipit alias animi sed corporis, velit ut modi sit, nemo necessitatibus a
-      doloremque sunt repellendus ratione? Quam distinctio ea tenetur sit, sequi aut, fugiat, sed
-      ipsum optio nemo vero non? Sed veritatis aperiam atque eius labore quasi porro molestias
-      voluptatum in culpa, officia maxime! Soluta, animi? Sequi eaque magni porro harum architecto a
-      obcaecati, nulla voluptas id quod culpa quo repellendus autem voluptatem. Fuga eaque nulla sit
-      distinctio? Nulla laudantium, alias vel sit tempora non enim sed quod ipsum animi ut veniam
-      velit aliquam nam earum amet neque impedit nisi pariatur voluptates? Similique, tenetur
-      cupiditate. Vel temporibus debitis mollitia. Dolorem quisquam blanditiis fuga omnis sunt
-      provident corrupti eaque repudiandae vero. Quasi dolor sunt, dolorum quia voluptate, quo quam,
-      veniam qui ex pariatur modi vero illo porro ducimus? Fugit obcaecati odit libero inventore quo
-      beatae excepturi voluptatum! Repellendus hic corporis atque sed nulla corrupti optio itaque
-      doloribus sunt aliquid!
-    </p>
   </body>
 </html>
